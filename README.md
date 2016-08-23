@@ -41,7 +41,11 @@ Use as follows:
     "type": "repeatSection",
     "key": "investments",
     "templateOptions": {
-      "btnText": "Add another investment",
+      "staticData": false,
+      "translations": {
+        "remove": "Remove investiment",
+        "add": "Add new investment"
+      },
       "fields": [
         {
           "className": "row",
