@@ -161,3 +161,10 @@ Use as follows:
   }
 ]
 ```
+## Development
+
+Install the devDependencies via `npm` using: `npm install`.
+
+Build the dist files running `gulp`.
+
+For watch and build your files according to new changes you can run: `gulp watch`

@@ -58,12 +58,15 @@ function buildScript(file, watch) {
   return rebundle();
 }
 
-// run once
 gulp.task('scripts', function() {
   return buildScript('index.js', false);
 });
 
 // run 'scripts' task first, then watch for future changes
 gulp.task('default', ['scripts'], function() {
+  return buildScript('index.js', false);
+});
+
+gulp.task('watch', ['scripts'], function() {
   return buildScript('index.js', true);
 });
